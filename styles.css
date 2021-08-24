@@ -1,3 +1,14 @@
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
 header {
   background-color: #f63232;
   padding: 20px;
@@ -7,6 +18,14 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+header h1 {
+  color: white;
+  border: 8px solid white;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 36px;
 }
 
 .banner {
@@ -30,4 +49,37 @@ header {
 }
 .banner span {
   font-size: 1.3em;
+}
+
+nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 106px;
+}
+
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+}
+nav li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+nav li a.join {
+  color: #f63232;
+}
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
